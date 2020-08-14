@@ -1,11 +1,10 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'milestone-check-action'
+description: 'check if a milestone is attached to the Pull request'
+author: 'clamoriniere@datadoghq.com'
 inputs:
-  milliseconds: # change this
-    required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+  github_tocken:
+    required: false
+    description: 'used provide the github token'
 runs:
   using: 'node12'
   main: 'dist/index.js'
